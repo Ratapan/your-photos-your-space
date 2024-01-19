@@ -1,0 +1,38 @@
+{
+  "name": "your-photos-your-space",
+  "version": "0.0.1",
+  "description": "The backend of \"Your Photos, Your Space\" is the powerhouse driving personalized photo management on the Cloudflare R2 platform. Developed with cutting-edge and efficient technologies, the backend is designed to offer performance, security, and scalability.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w & wait-on ./dist/index.js && node dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "fotografía",
+    "gestión",
+    "backend",
+    "typescript",
+    "fastify",
+    "mongodb",
+    "jwt"
+  ],
+  "author": "Ratapan",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.495.0",
+    "@fastify/cors": "^8.5.0",
+    "@fastify/jwt": "^8.0.0",
+    "@fastify/swagger": "^8.14.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.25.2",
+    "mongodb": "^6.3.0",
+    "multer": "1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
